@@ -1,4 +1,3 @@
-# coding=utf-8
 
 """
     Timer usage A small app that displays date

@@ -29,7 +29,7 @@ while True:
     clear()
 
     print("""
-        tarih: {}/{}/{}
-        saat : {}:{}:{}
+        date: {}/{}/{}
+        clock : {}:{}:{}
         """.format(day, mount, year, hour, minute, second))
         

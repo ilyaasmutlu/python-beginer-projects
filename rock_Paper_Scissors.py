@@ -1,40 +1,35 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Mar 14 22:08:17 2021
-
-@author: ILYAS MUTLU
-"""
-
-import random
+import random 
 option=["rock","paper","scissors"]
 rock=option[0]
 paper=option[1]
 scissors=option[2]
-print("Welcome to the game Press q to end the game")
+print("Wolcome to the game press q to end the game")
 while True:
     selection = input("Is it rock or paper or scissors?: ")
     selection2 = random.choice(option)
     if selection==rock:
         if selection2==rock:
-            print("Computer's choice: Stone Result: Draw")
+            print("Computer`s choice: stone result: Draw")
         elif selection2==paper:
-            print("Computer choice Paper: You lost")
+            print("Computer choice paper: you lost")
         else:
-            print("Computer choice scissors: You won")
+            print("Computer choice scissors: you won")
     if selection==paper:
         if selection2==rock:
-            print("Computer selection Stone: You won")
+            print("Computer selection stone: you won")
+
         elif selection2==paper:
-            print("Computer selection Paper: Draw")
+            print("Computer selection paper: draw")
         else:
-            print("Computer choice scissors: You lost")
+            print("Computer choice scissors: you lost")
     if selection==scissors:
         if selection2==rock:
-            print("Computer choice Stone: You lost")
+            print("Computer choice scissors: you lost")
         elif selection2==paper:
-            print("Computer selection Paper: You won")
+            print("Computer selection paper: you won")
         else:
-            print("Computer choice of scissors: Draw")
+            print("Computer choice scissors: draw")
+
     if selection=='q':
-        print("Exiting...")
+        print("Exiting ...")
         break

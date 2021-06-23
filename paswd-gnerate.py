@@ -1,12 +1,23 @@
 import random
-import string
 
-def get_random_string(length):
-    # choose from all lowercase letter
-    letters = string.ascii_lowercase
-    result_str = ''.join(random.choice(letters) for i in range(length))
-    print("Random string of length", length, "is:", result_str)
+print('''
+Password Generator
+==================
 
-get_random_string(8)
-get_random_string(6)
-get_random_string(4)
+''')
+
+chars = 'qwertyuiopasdfghjklzxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM!@#$%^&&**(),./;[]123456789'
+
+number = input('number of passwords?')
+number = int(number)
+
+lenght = input('password length: ')
+lenght = int(lenght)
+
+print('\nhere are your passwords:\n')
+
+for pwd in range(number):
+    password =''
+    for c in range(lenght):
+        password += random.choice(chars)
+    print(password)

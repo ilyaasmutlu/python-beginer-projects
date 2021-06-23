@@ -1,10 +1,10 @@
 import random
 import time
-import  webbrowser
+import webbrowser
 
 while True:
     sites = random.choice(['google.com','facebook.com'])
-    visit= "https://{}".format(sites)
+    visit = "https://{}".format(sites)
     webbrowser.open(visit)
-    seconds=random.randint(2,5)
+    seconds= random.randint(2,5)
     time.sleep(seconds)

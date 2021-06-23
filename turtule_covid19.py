@@ -1,4 +1,3 @@
-
 import turtle
 a=0
 b=0
@@ -15,5 +14,4 @@ while True:
     a+=3
     b+=1
     if b==201:
-        break    
-turtle.close()
+        break
